@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header css */
+.App-header {
+   background-color: black;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: white;
+   font-size: 14px;
+   padding: 10px;
+  }
+
+.header-info{
+   display: flex;
+   margin-right: 10px;
+}
+
+.header-text{
+  display: flex;
+  align-items: center;
+}
+.header-timing
+{
+   display: flex;
+   justify-content:space-between;
+   margin-right: 10px;
+}
+
+.small-nav{
+  display:none;
+}
+
+.header-call{
+  display: flex;
+  justify-content:space-between;
+}
+
+
+/*nav css */
+
+.App-nav{
+  padding: 25px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+ 
+} 
+
+.classy-nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.list-nav-bar{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-items: center;
+  padding: 15px;
+}
+
+.nav-row{
+  margin-left:40px;
+}
+
+.nav-image-cart{
+  padding-left: 50px;
+}
+
+.nav-buttun{
+  padding-left: 35px;
+}
+
+.book-now-button{
+  font-family: "Playfair Display", serif;
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0 35px;
+  text-align: center;
+  background-color: transparent;
+  color: #252525;
+  border: 2px solid #252525;
+  border-radius: 60px;
+}
+
+.book-now-button:hover{
+  background-color: goldenrod;
+  box-shadow: 20px 20px 50px grey;
+  transition: ease-in 0.5s;
+}
+
+.book-now-button:active{
+  background-color: goldenrod;
+  box-shadow: 20px 20px 50px grey;
+}
+
+/* nav link style*/
+a {
+  cursor: pointer;
+}
+
+.nav-element{
+  text-decoration: none;
+  color:#252525;
+}
+
+.nav-element:hover{
+  color: goldenrod;
+  transition: ease-in 0.3s;
+}
+
+.nav-element:active{
+   text-decoration: underline;
+   text-decoration-color: goldenrod;
+   color:#252525;
+}
+
+
+/*  dropdown css */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: goldenrod;
+}
+
+.dropbtn{
+  margin:0;
+}
+
+
+/*body*/
+.body-part{
+  position: relative;
+}
+
+.body-image{
+  width: 100%;
+  height: auto;
+}
+
+.body-text{
+  position: absolute;
+  right: 350px;
+  top: 200px;
+  font-size: 80px;
+ 
+}
+
+/*footer */
+.footer-content{
+  padding: 50px;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  line-height: 30px;
+}
+
+.social-icon{
+  margin-left: 15px;
+}
+
+.footer-logo{
+   margin-top: 10px;
+}
+
+
+
+
+/* media queries */
+@media only screen and (max-width: 1200px){
+  .body-text { 
+    font-size:70px;
+    left:500px;
+    top:150px;
+  }
+  .details{
+    margin-top: 50px;
+  }
+} 
+
+
+@media only screen and (max-width: 776px){
+  .body-text { 
+    font-size:50px;
+    left:450px;
+    top:150px;
+  }
+  .details{
+    margin-top: 50px;
+  }
+}  
+
+
+@media only screen and (max-width: 414px) {
+  .App-header{
+    font-size: 12px;
+  }
+  .header-image{
+    width: 15px;
+    height: 15px;
+  }
+  .classy-nav{
+    display:none;
+  }
+  .small-nav{
+    display:block;
+    background-color: transparent;
+  }
+  
+   .body-text{
+    font-size:35px;
+    left: 230px;
+    top: 80px;
+   }
+
+  .footer-content{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .time-details,
+  .details{
+    margin-top: 50px;
+  }
+
+}
+
+@media only screen and (max-width:320px){
+  .body-text{
+    font-size: 20px;
+    left: 185px;
+    top: 60px;
+   }
+
+  .header-timing,
+  .header-call{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 200px){
+ .App-header{
+   font-size: 10px;
+ }
+ .header-timing,
+ .header-call{
+   display: none;
+ }
+ .footer-content{
+   padding: 0px;
+   display: flex;
+   flex-direction: column;
+   margin: 5px;
+ }
+ .time-details,
+ .details{
+   margin-top: 50px;
+ }
+
+ .body-text{
+  font-size:10px;
+  left: 100px;
+  top: 40px;
+ }
+}
+
+
+
+
+
+
